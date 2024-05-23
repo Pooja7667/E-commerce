@@ -1,0 +1,119 @@
+/* nav.css */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #0ec3e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+
+nav .dehaze-icon {
+  display: none;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav .link a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav .search {
+  display: flex;
+  align-items: center;
+}
+
+nav .search input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+nav .icons {
+  display: flex;
+  align-items: center;
+}
+
+nav .icon {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.phone {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.phone div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.phone div a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar{
+  background-color: #0ec3e3;
+}
+
+/* Media Queries */
+/* @media (max-width: 800px) {
+  
+  nav{
+    width:100%;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .dehaze-icon {
+    display: block;
+  }
+
+  .phone {
+    display: flex;
+  }
+} */
+
+@media (min-width: 700px) {
+   nav{
+    width:100%;
+    
+  }
+ nav.dehaze-icon {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  nav .dehaze-icon {
+  display: block;
+}
+  .phone {
+    display: block;
+    width:100% ;
+  
+}}
