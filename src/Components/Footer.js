@@ -13,7 +13,8 @@ const Footer = () => {
                             logo
                             <img src="" alt="" />
                         </div>
-                        <div className="desc ">
+                                 <div className="desc ">
+                                      
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elinkt. Est, minima.</p>
                         </div>
                         </div>

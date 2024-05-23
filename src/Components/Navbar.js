@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-         <div>p</div>
+       
       {open && (
         <div className="phone">
           <div>
