@@ -15,11 +15,13 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="main-box">
       <div className="navbar">
         <nav>
           <DehazeIcon className="dehaze-icon" onClick={handleOpen} />
-          <div>LOGO</div>
+          <div className="logo">
+            <div>LOGO</div>
+          </div>
 
           <div className="link">
             <Link to="home">Home</Link>
@@ -37,18 +39,19 @@ const Navbar = () => {
 
           <div className="icons">
             <div className="icon">
-              <PersonAddAlt1Icon /> Profile
+              <WorkOutlineIcon /> Cart
             </div>
             <div className="icon">
               <FavoriteIcon /> Wishlist
             </div>
             <div className="icon">
-              <WorkOutlineIcon /> Cart
+              <PersonAddAlt1Icon />
+              Profile
             </div>
           </div>
         </nav>
       </div>
-       
+
       {open && (
         <div className="phone">
           <div>
@@ -61,7 +64,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

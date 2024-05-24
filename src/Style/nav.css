@@ -1,38 +1,43 @@
-/* nav.css */
+/* General Styles for Navigation */
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #0ec3e3;
+  justify-content: space-around;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width:100%;
+  background-color: #0ec3e3; /* Adjusted to match the main box background */
+  width: 100%;
+  height: 60px;
+}
+
+.main-box {
+  background-color: #0ec3e3;
+  width: 100vw;
 }
 
 nav .dehaze-icon {
   display: none;
 }
 
-nav div {
-  display: flex;
-  align-items: center;
-}
-
-nav .link a {
-  margin: 0 10px;
+nav .link {
   text-decoration: none;
   color: #333;
+  gap: 15px;
+  font-size: bold;
 }
 
 nav .search {
   display: flex;
   align-items: center;
+  background-color: #fff;
+  color: black;
+  border-radius:6px;
+ 
 }
 
 nav .search input {
-  padding: 5px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding:0px 40px;
 }
 
 nav .icons {
@@ -41,7 +46,6 @@ nav .icons {
 }
 
 nav .icon {
-  margin-left: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -51,7 +55,6 @@ nav .icon {
   display: none;
   position: absolute;
   top: 60px;
-  left: 0;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,7 +64,7 @@ nav .icon {
 .phone div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .phone div a {
@@ -70,50 +73,66 @@ nav .icon {
   color: #333;
 }
 
-.navbar{
-  background-color: #0ec3e3;
-}
-
 /* Media Queries */
-/* @media (max-width: 800px) {
-  
-  nav{
-    width:100%;
+
+/* Styles for screens wider than 800px */
+@media (min-width: 801px) {
+  .main-box {
+    background-color: #0ec3e3;
+    width: 100vw;
   }
 
-  .link {
+  nav .dehaze-icon {
     display: none;
   }
 
-  .dehaze-icon {
+  .phone {
+    display: none;
+  }
+
+  .icons {
+    background-color: #0ec3e3;
+    gap:20px;
+  }
+
+  nav .link {
+    display: flex;
+  }
+}
+
+/* Styles for screens between 600px and 800px */
+@media (min-width: 601px) and (max-width: 800px) {
+  .main-box {
+    background-color: #0ec3e3;
+  }
+  nav .dehaze-icon {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+  }
+  .icons {
+    background-color: #0ec3e3;
+  }
+
+  nav .link {
+    display: flex;
+  }
+}
+
+/* Styles for screens 600px and below */
+@media (max-width: 600px) {
+  nav .dehaze-icon {
     display: block;
+  }
+
+  nav .link {
+    display: none;
   }
 
   .phone {
     display: flex;
-  }
-} */
-
-@media (min-width: 700px) {
-   nav{
-    width:100%;
-    
-  }
- nav.dehaze-icon {
-    display: none;
-  }
-
-  .phone {
-    display: none;
+    position: absolute;
   }
 }
-
-@media (max-width: 600px) {
-  nav .dehaze-icon {
-  display: block;
-}
-  .phone {
-    display: block;
-    width:100% ;
-  
-}}
